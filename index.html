@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+    font-family:'Times New Roman';
+    margin: 0px;
+    padding: 0px;
+    background-color:pink;
+}
+
+.main-header {
+    font-size: 36px;
+    color: #a80d68;
+    width: 100%;
+    margin: 0;
+    border-bottom: 3px solid rgb(0,0,0 );
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 1rem;
+}
+.main-header::before,
+        .main-header::after {
+            content: "🫶";
+            color: gold;
+            position: center;
+        }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    height: 10rem;
+}
+
+.intro-paragraph{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cta-button{
+    position: absolute;
+    top: 23rem;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5e1429;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+.cta-button::before {
+    content: "👉";
+    color: #fff;
+    position: absolute;
+    left: 2px;
+}
+
+.cta-button::after {
+    content: "👈";
+    color: #fff;
+    position: absolute;
+    right: 2px;
+}
+</style>
+
+</head>
+<body>
+    <header class="main-header">
+       <h1>JENNIE KIM</h1>
+    </header>
+    <main>
+        <div class="center">
+            <img src="Jennie.jpg" alt="Jennie">
+
+            <p class="intro-paragraph">
+               there is one food Jennie undoubtedly loves: sandwiches. She especially likes it when it is served with avocado on top.
+             </p>
+        </div>
+
+        <button class="cta-button">CLICK HERE!</button>
+    </main>
+</body>
+</html>
